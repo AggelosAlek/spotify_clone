@@ -1,0 +1,432 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #121212;
+  color: white;
+  overflow-y: hidden;
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.login_logo {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.login_button {
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+  border-radius: 99999px;
+  background-color: #1ed760;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  cursor: pointer;
+  color: #181818;
+}
+
+.login_button:hover {
+  background-color: #181818;
+  transition: 0.3s;
+  color: #1ed760;
+  outline: 4px solid #1ed760;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.header_left {
+  flex: 0.5;
+}
+
+.header_left > input {
+  border: none;
+  width: 100%;
+}
+
+.searchbar {
+  min-width: 90px;
+  background-color: white;
+  color: grey;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 5px 20px 5px 5px;
+  border-radius: 30px;
+  gap: 0.75rem;
+}
+
+.body {
+  flex: 0.9;
+  height: 100vh;
+  padding: 1.5rem 2rem 120px 2rem;
+  overflow-y: auto;
+}
+
+.body_info {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+.body_info > img {
+  height: 232px;
+  width: 232px;
+}
+
+.body_infoText {
+  margin: 0 1rem;
+}
+
+.body_infoText > h2 {
+  font-size: 5em;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.body_infoText > div {
+  font-size: 0.75em;
+}
+
+.body_infoText > p {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  flex: 0.1;
+  background-color: black;
+  height: 100vh;
+  padding: 1.5rem 1.5rem;
+  color: #adb3b3;
+  min-width: 230px;
+  font-weight: 500;
+  padding-bottom: 90px;
+}
+
+.sidebar_logo {
+  width: 130px;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+
+.containt {
+  display: flex;
+}
+
+.hover {
+  transition: 0.2s color ease-in;
+  cursor: pointer;
+}
+
+.hover:hover {
+  color: white;
+}
+.nav {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.HeadNav {
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+}
+
+.HeadNav_link {
+}
+
+.white {
+  color: white;
+}
+
+.playlist_Title {
+  padding: 2rem 0 0 0;
+  border-bottom: 1px solid rgb(41, 41, 41);
+}
+
+.playlist_option {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.playlists {
+  margin: 1rem 0;
+  font-weight: 400;
+  overflow: auto;
+  height: 100%;
+}
+
+.playlist_item {
+  padding-bottom: 1rem;
+}
+
+.playlist_item:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.playlists::-webkit-scrollbar {
+  width: 10px;
+  height: 50px;
+}
+
+.playlists::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+  background-color: #181818;
+  outline: 1px rgb(41, 41, 41) solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer_left {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 300px;
+}
+
+.footer_center {
+  flex: 0.4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 300px;
+}
+
+.footer_right {
+  flex: 0.3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.footer_right * .MuiSlider-root {
+  color: #1ed760;
+}
+
+.footer_songInfo h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.footer_songInfo p {
+  font-size: 0.8em;
+  color: #adb3b3;
+}
+
+.footer_green {
+  color: #1ed760;
+}
+
+.footer_green:hover,
+.footer_icon:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
+}
+
+.footer_albumLogo {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.table_wrapper {
+  width: 100%;
+  margin: 5rem 0;
+}
+
+.table_header {
+  border-bottom: 1px solid rgb(41, 41, 41);
+  font-size: 0.9em;
+}
+
+.row {
+  display: flex;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  color: #adb3b3;
+}
+
+.song_hover:hover {
+  background-color: rgba(173, 179, 179, 0.2);
+  border-radius: 5px;
+}
+
+.index {
+  flex: 0.02;
+}
+
+.title {
+  flex: 0.48;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.title_img > img {
+  height: 50px;
+  width: 50px;
+}
+
+.details_wrapper {
+  padding: 0 1rem;
+}
+
+.song_name {
+  font-weight: 500;
+  color: white;
+}
+
+.artist {
+  font-size: 0.8em;
+  color: #adb3b3;
+}
+
+.album {
+  flex: 0.2;
+
+  font-size: 0.9em;
+}
+
+.date {
+  flex: 0.2;
+
+  font-size: 0.9em;
+}
+
+.duration {
+  flex: 0.1;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+.categories_container > h2 {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 1.5rem 0;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.categorie_item {
+  width: 254px;
+  height: 254px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.categorie_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+.playlists_container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.collection_item {
+  background-color: #171717;
+  padding: 1rem;
+  border-radius: 5px;
+  max-width: 182px;
+}
+
+.collection_item:hover {
+  background-color: #292929;
+  transition: 0.3s;
+}
+
+.collection_item > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.collection_item > h4 {
+  padding: 1rem 0 0.5rem 0;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.collection_item > p {
+  padding: 0 0 1rem 0;
+  font-size: 0.85em;
+  color: #adb3b3;
+  font-weight: 500;
+}
+
+.recently_played {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 5px;
+  width: 32%;
+}
+
+.recently_played:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.recently_played > img {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px 0 0 5px;
+}
