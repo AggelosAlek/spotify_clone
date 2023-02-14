@@ -1,16 +1,15 @@
 import { useEffect } from "react";
 import Login from "./components/Login";
-import { getTokenFromUrl, remove_hash_from_url } from "./components/Spotify";
+import { getTokenFromUrl } from "./components/Spotify";
 import Body from "./pages/body";
 import { useDispatch, useSelector } from "react-redux";
-import { SetUser, SetToken, SetPlaylists, SetCurrentPlaylist } from "./redux";
+import { SetToken } from "./redux";
 
 function App() {
   const dispatch = useDispatch();
-  const { token, currentPlaylistID } = useSelector((state) => {
+  const { token } = useSelector((state) => {
     return {
       token: state.UserData.token,
-      currentPlaylistID: state.UserData.currentPlaylistID,
     };
   });
   useEffect(() => {
@@ -20,6 +19,7 @@ function App() {
 
     if (_token) {
       dispatch(SetToken(_token));
+      console.log(_token);
     }
   }, [dispatch]);
 

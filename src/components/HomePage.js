@@ -2,13 +2,8 @@ import axios from "axios";
 import { useEffect } from "react";
 import Header from "./Header";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  SetFeaturedPlaylists,
-  SetRequestLink,
-  SetCurrentPlaylistID,
-} from "../redux";
+import { SetFeaturedPlaylists, SetCurrentPlaylistID } from "../redux";
 import CollectionItem from "./CollectionItem";
-import GetPlaylist from "./GetPlaylist";
 
 function HomePage() {
   const dispatch = useDispatch();
@@ -18,7 +13,6 @@ function HomePage() {
       featuredPlaylists: state.UserData.featuredPlaylists,
     };
   });
-  console.log(featuredPlaylists);
 
   useEffect(() => {
     const getFeaturedPlaylists = async () => {
