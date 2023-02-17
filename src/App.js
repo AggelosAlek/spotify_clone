@@ -19,7 +19,6 @@ function App() {
 
     if (_token) {
       dispatch(SetToken(_token));
-      console.log(_token);
     }
   }, [dispatch]);
 

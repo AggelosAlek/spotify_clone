@@ -41,12 +41,8 @@ function SideBar() {
 
   const renderedItems = playlists?.items?.map((playlist) => {
     return (
-      <Link to="playlist">
-        <div
-          onClick={() => handleClick(playlist.id)}
-          key={playlist.id}
-          className="playlist_item"
-        >
+      <Link to="playlist" key={playlist.id}>
+        <div onClick={() => handleClick(playlist.id)} className="playlist_item">
           {playlist.name}
         </div>
       </Link>

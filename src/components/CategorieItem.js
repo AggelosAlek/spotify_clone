@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function CategorieItem({ title, image }) {
+function CategorieItem({ title, image, ...rest }) {
   const [hover, setHover] = useState(false);
 
   const handleMouseOver = () => {
@@ -19,6 +19,7 @@ function CategorieItem({ title, image }) {
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
       className="categorie_item"
+      {...rest}
     >
       {hover && <div className="categorie_title">{title}</div>}
     </div>

@@ -43,6 +43,7 @@ function HomePage() {
         img={playlist.images[0].url}
         title={playlist.name}
         creator={playlist.owner.display_name}
+        key={playlist.id}
         to="playlist"
       />
     );

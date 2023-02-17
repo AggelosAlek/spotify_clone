@@ -8,7 +8,8 @@ const UserDataSlice = createSlice({
     playing: false,
     currentPlaylist: null,
     currentPlaylistID: null,
-    token: null,
+    token:
+      "BQBUYHrUGEkh7HdXuAzZZOUjcN1yrtIX2rSrjNewwIm-3e179Rq2Cy0bKwaXL9uytWSO5t--umtssTKsizthoIScUo2nLbVOGnrxHMYLNhLo_7FutPPWMrf9-VAEiVoMQ1OnEeHNHsacoYDNp3xK9bynUsK-B0gpvKMbJlX-EF-sfIX9_bRBDBqRxkKt7JTYVRY8BR2ta8A_TGM7Tu-4h1fx8ASJhOc",
     currentSongID: null,
     currentSong: null,
     categories: null,

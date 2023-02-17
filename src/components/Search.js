@@ -33,7 +33,11 @@ function Search() {
 
   const renderedItems = categories?.categories.items.map((categorie) => {
     return (
-      <CategorieItem title={categorie.name} image={categorie.icons[0].url} />
+      <CategorieItem
+        title={categorie.name}
+        image={categorie.icons[0].url}
+        key={categorie.id}
+      />
     );
   });
 

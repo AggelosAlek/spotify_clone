@@ -17,6 +17,7 @@ function YourPlaylists() {
         img={playlist.images[1].url}
         title={playlist.name}
         creator={playlist.owner.display_name}
+        key={playlist.id}
       />
     );
   });
