@@ -1,6 +1,6 @@
 # About The Project
 
-This Project was made to practice my skills on react and APIs. The main idea was to Log In with your Spotify account and then display your playlists and your songs as just like Spotify. Sadly in order to make it happen with different accounts, I had to add every account manually into the Dashboard and then it whould be possible to log in and display its informations. So the idea now is that you will log in with my account (happens automatically) and you will see my information(playlists and songs)
+This Project was made to practice my skills on react and APIs. The main idea was to Log In with your Spotify account and then display your playlists and your songs just like Spotify. Sadly in order to make it happen with different accounts, I had to add every account manually into the Dashboard and then it whould be possible to log in and display its informations. So the idea now is that you will log in with my account (happens automatically) and you will see my information(playlists and songs)
 
 # Getting Started with Create React App
 
