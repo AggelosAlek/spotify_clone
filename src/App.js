@@ -12,6 +12,7 @@ function App() {
       token: state.UserData.token,
     };
   });
+
   useEffect(() => {
     const hash = getTokenFromUrl();
     window.history.pushState({}, document.title, "/" + "");
